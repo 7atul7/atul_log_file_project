@@ -100,7 +100,7 @@ if __name__ == '__main__':
         sys.exit(1)
 
     try:
-        setup.data_from_s3_cleansed()
+        session.data_from_s3_cleansed()
     except Exception as e:
         logging.error('Error at %s', 'read from s3 clean', exc_info=e)
         sys.exit(1)
